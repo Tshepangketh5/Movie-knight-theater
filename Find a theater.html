@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieKnight theater</title>
+  <link rel="icon" href="MoviesPlus.png" alt="icon">
+
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Tshepang Kethotswe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Movies.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oleo+Script+Swash+Caps&family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f056ae5a8f.js" crossorigin="anonymous"></script>
+</head>
+
+<!--body-->
+
+<body>
+    <section id="banner">
+        <a href="index.html"><img src="Mylogo3.png" alt="logo" class="logo"></a>
+           <div class="banner-text">
+              <h1>FIND A THEATER</h1>
+            </div>   
+
+      <div id="sideNav">
+        <nav>
+           <ul>
+           <li><a href="Movies.html"><b>Movies</b></a></li>
+           <li><a href="Find a theater.html"><b>Find a theater</b></a></li>
+           <li><a href="calendar.html"><b>Calendar</b></a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div id="menuButton">
+         <img src="list.png" alt="menu" id="menu">
+         
+      </div>
+</section>
+  <!--theaters--> 
+  <div class="theater">
+
+    <div class="inside">
+       <img src="Maun.jpg" alt="suicide squad">
+    </div>
+    <div class="title">
+     <h1><b>MAUN</b></h1>
+     <p><b>New Mall</b></p>
+     </div>
+     </div>
+ <!--theaters-->     
+ <div class="theater">
+
+  <div class="inside">
+     <img src="Gaborone.jpg" alt="suicide squad">
+  </div>
+  <div class="title">
+   <h1><b>GABORONE</b></h1>
+   <p><b>Game City</b></p>
+
+   </div>
+   </div>
+<!--theaters-->
+<div class="theater">
+
+  <div class="inside">
+     <img src="Francistown.jpg" alt="suicide squad">
+  </div>
+  <div class="title">
+   <h1><b>FRANCISTOWN</b></h1>
+   <p><b>Galo mall</b></p>
+   </div>
+   </div>
+
+
+
+
+ <!--footer-->
+ <section id="footer">
+    <div class="footer-row">
+    <div class="footer-left">
+      <h1>COPYRIGHT</h1>
+      <p><b>copyright &copy;2022 MovieKnight. designed by <span>Tshepang Kethotswe</span></b></p>
+    </div>
+       
+    <div class="footer-right">
+      <h1>TERMS & CONDITIONS</h1>
+      <p><b>Movieknight@gmail.com</b></p>
+      <p><b>+26772164113</b></p>
+    </div>
+
+    <div class="social-links">
+      <a href="www.facebook.com/mmgketh"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+      <a href="www.twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+      <a href="www.youtube.com"><i class="fa-brands fa-youtube-square"></i></a>
+    </div>
+
+ </section>  
+<!--javascript for menu button-->
+    <script>
+        var menuButton = document.getElementById("menuButton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right ="-250px";
+
+        menuButton.onclick = function(){
+          if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src="close.png"
+          } else {
+                sideNav.style.right = "-250px";
+                menu.src="list.png"
+          }
+        }
+      </script>
+
+
+</body>
+</html>
+        

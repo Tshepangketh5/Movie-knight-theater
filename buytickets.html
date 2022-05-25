@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieKnight theater</title>
+  <link rel="icon" href="MoviesPlus.png" alt="icon">
+
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Tshepang Kethotswe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Movies.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oleo+Script+Swash+Caps&family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f056ae5a8f.js" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="banner">
+        <a href="index.html"><img src="Mylogo3.png" alt="logo" class="logo"></a>
+           <div class="banner-text">
+              <h1>PAYMENT</h1>
+            </div>   
+
+      <div id="sideNav">
+        <nav>
+           <ul>
+           <li><a href="Movies.html"><b>Movies</b></a></li>
+           <li><a href="Find a theater.html"><b>Find a theater</b></a></li>
+           <li><a href="calendar.html"><b>Calendar</b></a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div id="menuButton">
+         <img src="list.png" alt="menu" id="menu">
+         
+      </div>
+  </section>
+<div class="wrapper">
+     <h2>Payment</h2>
+         <form method="POST">
+            <h4>Account</h4>
+              <div class="input-group">
+                <div class="input-box">
+                     <input type="text" placeholder="Full Name" required class="name">
+                        <i class="fa fa-user icon"></i>
+          </div>
+
+<div class="input-box">
+        <input type="text" placeholder="Nick Name" required class="name">
+            <i class="fa fa-user icon"></i>
+    </div>
+
+</div>
+<div class="input-group">
+      <div class="input-box">
+          <input type="email" placeholder="Email Adress" required class="name">
+              <i class="fa fa-envelope icon"></i>
+      </div>
+</div>
+
+<div class="input-group">
+          <div class="input-box">
+              <h4>Date of Birth</h4>
+                 <input type="text" placeholder="DD" class="date">
+                    <input type="text" placeholder="MM" class="date">
+                        <input type="text" placeholder="YYYY" class="date">
+            </div>
+
+<div class="input-box">
+      <h4>Gender</h4>
+          <input type="radio" id="b1" name="gendar" checked class="radio">
+                    <label for="b1">Male</label>
+                    <input type="radio" id="b2" name="gendar" class="radio">
+                    <label for="b2">Female</label>
+                </div>
+</div>
+<div class="input-group">
+      <div class="input-box">
+          <h4>Payment Details</h4>
+              <input type="radio" name="pay" id="bc1" checked class="radio">
+                 <label for="bc1"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
+                   
+      </div>
+</div>
+<div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Card Number" required class="name">
+                    <i class="fa fa-credit-card icon"></i>
+                </div>
+</div>
+<!--cvc-->
+<div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Card CVC" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+<div class="input-box">
+      <select>
+          <option>21 may</option>
+          <option>22 may</option>
+          <option>23 may</option>
+      </select>
+              <select>
+                <option>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+              </select>
+          </div>
+</div>
+<div class="input-group">
+          <div class="input-box">
+            <a href="successful.html"><button type="submit">PAY NOW</button></a>
+            </div>
+</div>
+</form>
+</div>     
+
+
+ <!--footer-->
+ <section id="footer">
+    <div class="footer-row">
+    <div class="footer-left">
+      <h1>COPYRIGHT</h1>
+      <p><b>copyright &copy;2022 MovieKnight. designed by <span>Tshepang Kethotswe</span></b></p>
+    </div>
+       
+    <div class="footer-right">
+      <h1>TERMS & CONDITIONS</h1>
+      <p><b>Movieknight@gmail.com</b></p>
+      <p><b>+26772164113</b></p>
+    </div>
+
+    <div class="social-links">
+      <a href="www.facebook.com/mmgketh"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+      <a href="www.twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+      <a href="www.youtube.com"><i class="fa-brands fa-youtube-square"></i></a>
+    </div>
+<!--javascript for menu button-->
+ </section>  
+
+    <script>
+        var menuButton = document.getElementById("menuButton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right ="-250px";
+
+        menuButton.onclick = function(){
+          if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src="close.png"
+          } else {
+                sideNav.style.right = "-250px";
+                menu.src="list.png"
+          }
+        }
+      </script>
+
+
+</body>
+</html>
+        

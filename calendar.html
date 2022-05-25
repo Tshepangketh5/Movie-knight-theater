@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieKnight theater</title>
+  <link rel="icon" href="MoviesPlus.png" alt="icon">
+
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Tshepang Kethotswe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Movies.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oleo+Script+Swash+Caps&family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f056ae5a8f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="banner">
+        <a href="index.html"><img src="Mylogo3.png" alt="logo" class="logo"></a>
+           <div class="banner-text">
+              <h1>CALENDAR</h1>
+            </div>   
+
+      <div id="sideNav">
+        <nav>
+           <ul>
+           <li><a href="Movies.html"><b>Movies</b></a></li>
+           <li><a href="Find a theater.html"><b>Find a theater</b></a></li>
+           <li><a href="calendar.html"><b>Calendar</b></a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div id="menuButton">
+         <img src="list.png" alt="menu" id="menu">
+         
+      </div>
+      </section>
+      <table>
+        <tr>
+          <th><b>DAYS</b></th>
+          <th>08:00-10:30</th>
+          <th>11:00-13:30</th>
+          <th>14:00-16:30</th>
+          <th>17:00-19:30</th>
+          <th>20:00-22:30</th>
+        </tr>
+        <tr>
+          <td><b>MONDAY</b></td>
+          <td><b>THE BAD GUYS</b></td>
+          <td><b>TRANSFORMERS</b></td>
+          <td><b>QUIET PLACE</b></td>
+          <td><b>IP MAN</b></td>
+          <td><b>AVENGERS</b></td>
+        </tr>
+        <tr>
+          <td><b>TUESDAY</b></td>
+          <td><b>DR STRANGE</b></td>
+          <td><b>TRANSFORMERS</b></td>
+          <td><b>AVENGER</b></td>
+          <td><b>SHAFT</b></td>
+          <td><b>NOBODY'S FOOL</b></td>
+        </tr>
+        <tr>
+          <td><b>WEDNESDAY</b></td>
+          <td><b>KUNG FU PANDA</b></td>
+          <td><b>GROWN UPS</b></td>
+          <td><b>IP MAN</b></td>
+          <td><b>RED NOTICE</b></td>
+          <td><b>CENTRAL INTELLIGENCE</b></td>
+        </tr>
+        <tr>
+          <td><b>THURSDAY</b></td>
+          <td><b>NAKED</b></td>
+          <td><b>TERMINATOR</b></td>
+          <td><b>6 UNDERGROUND</b></td>
+          <td><b>GET HARD</b></td>
+          <td><b>ESCAPE ROOM</b></td>
+        </tr>
+        <tr>
+          <td><b>FRIDAY</b></td>
+          <td><b>WARCRAFT</b></td>
+          <td><b>IP MAN</b></td>
+          <td><b>TALL GIRL</b></td>
+          <td><b>RED NOTICE</b></td>
+          <td><b>DR STRANGE</b></td>
+        </tr>
+        <tr>
+          <td><b>SATURDAY</b></td>
+          <td><b>SUICIDE SQUAD</b></td>
+          <td><b>UNHOLY</b></td>
+          <td><b>FROZEN</b></td>
+          <td><b>AVENGERS</b></td>
+          <td><b>UNFAITHFUL</b></td>
+        </tr>
+      </table>
+         
+ <!--footer-->
+ <section id="footer">
+    <div class="footer-row">
+    <div class="footer-left">
+      <h1>COPYRIGHT</h1>
+      <p><b>copyright &copy;2022 MovieKnight. designed by <span>Tshepang Kethotswe</span></b></p>
+    </div>
+       
+    <div class="footer-right">
+      <h1>TERMS & CONDITIONS</h1>
+      <p><b>Movieknight@gmail.com</b></p>
+      <p><b>+26772164113</b></p>
+    </div>
+
+    <div class="social-links">
+      <a href="www.facebook.com/mmgketh"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+      <a href="www.twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+      <a href="www.youtube.com"><i class="fa-brands fa-youtube-square"></i></a>
+    </div>
+
+ </section>  
+<!--javascript for menu button-->
+    <script>
+        var menuButton = document.getElementById("menuButton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right ="-250px";
+
+        menuButton.onclick = function(){
+          if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src="close.png"
+          } else {
+                sideNav.style.right = "-250px";
+                menu.src="list.png"
+          }
+        }
+      </script>
+
+
+</body>
+</html>
+        
